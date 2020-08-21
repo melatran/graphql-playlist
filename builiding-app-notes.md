@@ -55,3 +55,8 @@ const {GraphQLObjectType} = graphql;` grabs this object from the package graphql
 - define arguments inside query
 - parent comes into play with relationships and data
 - define which query user can use on the FE
+
+## Resolve Function
+- i know the query I'm working with
+- takes in the id of 2 from args
+- resolve has the function and describes how we get that data from where its store
