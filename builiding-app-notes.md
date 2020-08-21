@@ -47,3 +47,11 @@ const {GraphQLObjectType} = graphql;` grabs this object from the package graphql
 - fields are attributes and a function()
 - {} used for objects
 - use fields as a function to overcome reference type errors when there are multiple objects
+
+## Root Queries
+- in rootquery, fields doesn't need to be wrapped up in a function because the order doesn't matter
+- rootquery explains how we initially jump on the graph
+- when someone queries a booktype, I expect them to pass some argument along; I don't know what book they want to query
+- define arguments inside query
+- parent comes into play with relationships and data
+- define which query user can use on the FE
