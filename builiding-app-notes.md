@@ -36,3 +36,14 @@ app.listen(4000);
 
 - if you get `message": "GraphQL middleware options must contain a schema."` this means that schema tells graphql how to look
 - schema tells us what data structures and how to walk the graph to get the data
+
+## Building the schema
+- schema describes data on the graph (similar to AR)
+- start with describing object types (books and authors), relationships, and the queries
+- `
+const {GraphQLObjectType} = graphql;` grabs this object from the package graphql and store it to use inside the schema file; then define the type
+- GraphQLObjectType is a function ()
+- things like `GraphQLString` goes in here because it needs to be grabbed from the package
+- fields are attributes and a function()
+- {} used for objects
+- use fields as a function to overcome reference type errors when there are multiple objects
