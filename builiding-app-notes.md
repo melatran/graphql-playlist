@@ -60,3 +60,19 @@ const {GraphQLObjectType} = graphql;` grabs this object from the package graphql
 - i know the query I'm working with
 - takes in the id of 2 from args
 - resolve has the function and describes how we get that data from where its store
+
+## Testing Queries in Graphiql
+- not meant to go to /graphql
+- to test graphql server, use graphiql
+- look at the docs to see what query you have access to and what fields and arguments are required
+- the docs are essentially a document for this api we've made
+- query entry (if id doesn't exist, then returns null)
+
+```
+{
+  book(id: "1"){
+    name
+    genre
+  }
+}
+```
