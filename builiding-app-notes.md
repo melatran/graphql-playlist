@@ -86,3 +86,11 @@ const {GraphQLObjectType} = graphql;` grabs this object from the package graphql
 - when we enter a book id, the book properties serve as our parent
 - from the parent, i see i have an author id and now i can use the author id to find the information
 - use the resolve function to take in the parent and return other information in the nested data in graphql
+
+- in AuthorType, we cant use `type: BookType` implies author has only one book
+-  filter through books array and look for objects that match the criteria
+- the authorId is equal to the parent.id(initial author wanted) and authorId is the property with books
+
+- fields needs to be a function => because once it comes down to the AuthorType, it brings an error on Booktype because it can't find it
+- you can't move around the object types order
+- wrap fields in a function so it's not executing the function until the file runs and it knows the  booktype from previously instead of starting at 0 every single object type
