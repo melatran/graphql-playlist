@@ -77,3 +77,12 @@ const {GraphQLObjectType} = graphql;` grabs this object from the package graphql
   }
 }
 ```
+
+## Type Relations
+- every book has an author and every author has an array of books
+- similar to building one to many relationships and identify where it joins and add the id as part of the attribute
+- use the author id for the BE to send information back to the FE
+- parent data comes into play with nested data
+- when we enter a book id, the book properties serve as our parent
+- from the parent, i see i have an author id and now i can use the author id to find the information
+- use the resolve function to take in the parent and return other information in the nested data in graphql
