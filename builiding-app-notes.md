@@ -47,6 +47,7 @@ const {GraphQLObjectType} = graphql;` grabs this object from the package graphql
 - fields are attributes and a function()
 - {} used for objects
 - use fields as a function to overcome reference type errors when there are multiple objects
+- `GraphQLID` allows user to enter int or string to return data
 
 ## Root Queries
 - in rootquery, fields doesn't need to be wrapped up in a function because the order doesn't matter
